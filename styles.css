@@ -1,6 +1,6 @@
 :root {
     /* Primary colors */
-    -cyan: hsl(180, 66%, 49%);
+    --cyan: hsl(180, 66%, 49%);
     --dark-violet: hsl(257, 27%, 26%);
 
     /* Secondary colors */
@@ -19,7 +19,11 @@
     --regular: 500;
     --bold: 700;
 
+    /* Transitions */
+    --basic-transition: all 0.3s ease-in;
 }
+
+/* GENERAL STYLES */
 
 * {
     margin: 0;
@@ -35,4 +39,224 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
+}
+
+.buttons {
+    background-color: var(--cyan);
+    color: #fff;
+    font-family: var(--poppins);
+    font-size: 0.9rem;
+    font-weight: var(--bold);
+    text-shadow: 0px 0px 1px #ccc;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: var(--basic-transition);
+}
+
+.buttons:hover {
+    opacity: 0.6;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    padding: 54px 140px;
+    justify-content: space-between;
+}
+
+header div {
+    flex-basis: 50%;
+}
+
+header div ul {
+    display: flex;
+    align-items: flex-start;
+}
+
+header div ul li {
+    list-style: none;
+    margin-right: 32px;
+    transition: var(--basic-transition);
+}
+
+header div ul img {
+    margin-right: 45px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--grayish-violet);
+    font-weight: var(--bold);
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+header ul li:hover a {
+    color: var(--very-dark-violet);
+}
+
+#login ul {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#login ul li {
+    margin-right: 38px;
+}
+
+#login .buttons {
+    position: relative;
+    bottom: 7px;
+    padding: 8px;
+    width: 104px;
+}
+
+/* MAIN CONTENT */
+
+#site-intro {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+#site-intro div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 140px;
+}
+
+#site-intro h1 {
+    font-size: 4.4rem;
+    font-weight: var(--bold);
+    letter-spacing: -2px;
+    word-spacing: -1px;
+    color: var(--very-dark-blue);
+    line-height: 1.14;
+}
+
+#site-intro p {
+    color: var(--grayish-violet);
+    font-weight: var(--regular);
+    font-size: 1.2rem;
+    margin-bottom: 38px;
+}
+
+#site-intro .buttons {
+    font-size: 1rem;
+    width: 196px;
+    padding: 14px;
+}
+
+#site-intro img {
+    position: relative;
+    left: 124px;
+}
+
+#statistics {
+    background-color: #F0F1F6;
+    padding: 180px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#statistics-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 94px
+}
+
+#statistics-intro h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--very-dark-blue);
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+#statistics-intro p {
+    text-align: center;
+    color: var(--grayish-violet);
+    font-size: 1rem;
+    line-height: 1.82;
+    width: 64%;
+}
+
+#statistics-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    background-color: #fff;
+    width: 342px;
+    padding: 77px 34px 41px 32px;
+    margin-right: 28px;
+    border-radius: 6px;
+    box-shadow: rgba(114, 114, 114, 0.1) 0px 8px 24px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: -86px;
+}
+
+.card-text h3 {
+    color: var(--very-dark-violet);
+    font-size: 1.2rem;
+    margin-bottom: 17px;
+}
+
+.card-text p {
+    color: var(--grayish-violet);
+    font-size: 0.8rem;
+}
+
+.card-logo {
+    background-color: var(--dark-violet);
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    bottom: 120px;
+}
+
+#records {
+    transform: translateY(18%);
+}
+
+#records::before {
+    content: "";
+    display: block;
+    background-color: var(--cyan);
+    width: 28px;
+    height: 9px;
+    margin-left: -60px;
+    position: absolute;
+    margin-top: 32px;
+}
+
+#records::after {
+    content: "";
+    display: block;
+    background-color: var(--cyan);
+    width: 28px;
+    height: 9px;
+    margin-left: 310px;
+    position: absolute;
+    margin-top: -102px;
+}
+
+#customizable {
+    transform: translateY(36%);
 }
