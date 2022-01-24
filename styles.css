@@ -158,8 +158,8 @@ header ul li:hover a {
 }
 
 #shortening {
-    position: absolute;
-    top: 696px;
+    position: relative;
+    top: 82px;
     left: 50%;
     transform: translateX(-50%);
     width: 77.1%;
@@ -199,8 +199,15 @@ header ul li:hover a {
     margin-left: 24px;
 }
 
-#shortening ul li {
-    position: relative;
+#statistics ul {
+    display: flex;
+    flex-direction: column;
+    width: 95.7%;
+    justify-content: center;
+    margin-top: 84px;
+}
+
+#statistics ul li {
     list-style: none;
     display: flex;
     align-items: center;
@@ -212,23 +219,27 @@ header ul li:hover a {
     margin-top: 24px;
 }
 
-#shortening ul div {
+#statistics ul li:last-child {
+    margin-bottom: 2px;
+}
+
+#statistics ul div {
     display: flex;
     align-items: center;
 }
 
-#shortening ul li .entered-link a {
+#statistics ul li .entered-link a {
     color: var(--very-dark-violet);
     text-decoration: none;
 }
 
-#shortening ul li .given-link a {
+#statistics ul li .given-link a {
     color: var(--cyan);
     text-decoration: none;
     margin-right: 24px;
 }
 
-#shortening ul .buttons {
+#statistics ul .buttons {
     width: 102px;
     font-size: 0.8rem;
     padding: 10px;
@@ -237,7 +248,7 @@ header ul li:hover a {
 
 #statistics {
     background-color: #F0F1F6;
-    padding: 180px 140px 206px 140px;
+    padding: 0px 140px 206px 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,7 +259,8 @@ header ul li:hover a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 94px
+    margin-bottom: 94px;
+    margin-top: 116px;
 }
 
 #statistics-intro h2 {
@@ -274,11 +286,15 @@ header ul li:hover a {
 
 .cards {
     background-color: #fff;
-    width: 342px;
-    padding: 77px 34px 41px 32px;
+    width: 350px;
+    padding: 77px 38px 41px 32px;
     margin-right: 28px;
     border-radius: 6px;
     box-shadow: rgba(114, 114, 114, 0.1) 0px 8px 24px;
+}
+
+.cards:last-child {
+    margin-right: 0;
 }
 
 .card-text {
@@ -331,7 +347,7 @@ header ul li:hover a {
     background-color: var(--cyan);
     width: 28px;
     height: 9px;
-    margin-left: 310px;
+    margin-left: 318px;
     position: absolute;
     margin-top: -102px;
 }
@@ -372,14 +388,19 @@ footer {
     justify-content: space-between;
 }
 
+#logo-container {
+    margin-left: 24px;
+}
+
 #logo-container img {
     filter: brightness(0) invert(1);
 }
 
 #footer-links {
     display: flex;
-    flex-basis: 67%;
+    flex-basis: 58%;
     justify-content: space-between;
+    margin-right: 52px;
 }
 
 #footer-links ul li {
