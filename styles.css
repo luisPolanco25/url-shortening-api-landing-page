@@ -441,3 +441,176 @@ footer {
 #contact li:hover a {
     filter: brightness(0) saturate(100%) invert(91%) sepia(9%) saturate(6656%) hue-rotate(131deg) brightness(89%) contrast(80%);
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1320px) {
+
+    header {
+        padding: 54px 78px;
+    }
+
+    #site-intro div {
+        margin-left: 78px;
+    }
+
+    #site-intro h1 {
+        font-size: 3rem;
+    }
+
+    #site-intro p {
+        font-size: 1rem;
+    }
+
+    #site-intro img {
+        left: 158px;
+        width: 600px;
+    }
+
+    #shortening {
+        width: 82.1%;
+    }
+
+    #statistics {
+        padding: 0px 78px 206px 78px;
+    }
+
+    .cards {
+        width: 296px;
+        padding: 66px 20px 41px 22px;
+        margin-right: 28px;
+    }
+
+    #records::before {
+        margin-left: -50px;
+    }
+
+    #records::after {
+        margin-left: 274px;
+    }
+
+    footer {
+        padding: 70px 78px 62px;
+    }
+
+    #logo-container {
+        margin-left: 0;
+    }
+
+    #footer-links {
+        flex-basis: 70%;
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 978px) {
+
+    header {
+        padding: 54px 20px;
+    }
+
+    #site-intro div {
+        margin-left: 20px;
+    }
+
+    #site-intro h1 {
+        font-size: 2rem;
+        word-spacing: 1px;
+    }
+
+    #site-intro img {
+        left: 94px;
+    }
+
+    #shortening {
+        width: 94.5%;
+    }
+
+    #statistics {
+        padding: 0px 20px 262px 20px;
+    }
+
+    #statistics ul {
+        width: 100%;
+    }
+
+    #statistics-cards {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 326px;
+        padding: 66px 34px 40px 34px;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-logo {
+        bottom: 108px;
+    }
+
+    .card-text {
+        text-align: center;
+        margin-top: -76px;
+    }
+
+    .card-text p {
+        line-height: 1.8;
+    }
+
+    #records {
+        transform: translateY(31%);
+    }
+
+    #records::before {
+        width: 8px;
+        height: 50px;
+        margin-left: 0;
+        margin-top: 231px;
+    }
+
+
+    #records::after {
+        width: 8px;
+        height: 50px;
+        margin-left: 0;
+        margin-top: -158px;
+    }
+    
+    #customizable {
+        transform: translateY(68.4%);
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 54px 0 10px;
+    }
+
+    #logo-container {
+        margin-bottom: 42px;
+    }
+
+    #footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-links ul {
+        margin-bottom: 30px;
+    }
+
+    #footer-links ul li a {
+        letter-spacing: -1px;
+    }
+
+}
+
+@media (max-width: 728px) {
+
+
+
+}
