@@ -67,6 +67,14 @@ header {
     justify-content: space-between;
 }
 
+header > img {
+    display: none;
+}
+
+header i {
+    display: none !important;
+}
+
 header div {
     flex-basis: 50%;
 }
@@ -370,6 +378,7 @@ header ul li:hover a {
     letter-spacing: -1px;
     word-spacing: 2px;
     margin: 55px 0 22px 0;
+    text-align: center;
 }
 
 #boost .buttons {
@@ -611,6 +620,168 @@ footer {
 
 @media (max-width: 728px) {
 
+    header {
+        padding: 38px 26px 12px;
+    }
 
+    header ul img {
+        display: none;
+    }
+
+    header ul {
+        display: none !important;
+    }
+
+    header > img {
+        display: block;
+    }
+
+    header i {
+        display: block !important;
+        transform: scale(1.5);
+        opacity: 0.4;
+        font-weight: 200;
+    }
+
+    #site-intro {
+        flex-direction: column;
+        padding-bottom: 6px;
+    }
+
+    #site-intro img {
+        order: 1;
+        left: 76px;
+        width: 480px;
+    }
+
+    #site-intro div {
+        order: 2;
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+        padding: 42px 26px 0;
+    }
+
+    #site-intro h1 {
+        font-size: 2.4rem;
+    }
+
+    #site-intro p {
+        margin-top: 14px;
+    }
+
+    #shortening {
+        width: 87%;
+    }
+
+    #shortening form {
+        background: url('./images/bg-shorten-mobile.svg') var(--dark-violet);
+        background-size: cover;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    #shortening form input {
+        font-size: 0.9rem;
+        border-radius: 8px;
+        width: 100%;
+        padding: 11px 15px;
+        margin-bottom: 16px;
+    }
+
+    #shortening form input::placeholder {
+        font-size: 0.9rem;
+    }
+
+    #shortening form .buttons {
+        font-size: 1rem;
+        border-radius: 8px;
+        width: 100%;
+        margin-left: 0;
+        padding: 11px 15px;
+
+    }
+
+    #statistics ul li {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+        font-size: 0.9rem;
+    }
+
+    #statistics ul li .entered-link {
+        border-bottom: 1px solid #ccc;
+        padding: 12px 16px 10px;
+    }
+
+    #statistics ul li .given-link {
+        margin-bottom: 11px;
+    }
+
+    #statistics ul li .given-link a {
+        margin-right: 0;
+    }
+
+    #statistics ul div {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 16px 16px;
+    }
+
+    #statistics ul .buttons {
+        width: 100%;
+    }
+
+    #statistics-intro {
+        margin-top: 80px;
+    }
+    
+    #statistics-intro h2 {
+        font-size: 1.6rem;
+    }
+
+    #statistics-intro p {
+        font-size: 0.86rem;
+        width: 100%;
+    }
+
+    #boost {
+        background: url('./images/bg-boost-mobile.svg') var(--dark-violet);
+        background-size: cover;
+    }
+
+    #boost h2 {
+        font-size: 1.6rem;
+        margin: 96px 0 16px 0;
+    }
+
+    #boost .buttons {
+        margin-bottom: 90px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    #site-intro h1 {
+        font-size: 2.2rem;
+    }
+
+    #statistics-intro h2 {
+        font-size: 1.4rem;
+    }
+
+    .cards {
+        width: 265px;
+        padding: 66px 12px 40px 12px;
+    }
+
+    #customizable {
+        transform: translateY(62.5%);
+    }
+
+    #boost h2 {
+        font-size: 1.4rem;
+    }
 
 }
