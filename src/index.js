@@ -1,3 +1,5 @@
+import './styles.css';
+
 
 // HTML REFERENCES
 const burgerMenu = document.querySelector('header i');

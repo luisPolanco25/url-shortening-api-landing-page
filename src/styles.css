@@ -212,7 +212,8 @@ header ul li:hover a {
 }
 
 #shortening form {
-    background: url('./images/bg-shorten-desktop.svg') var(--dark-violet);
+    background: url('./assets/img/bg-shorten-desktop.svg') var(--dark-violet);
+    background: url('./assets/img/bg-shorten-desktop.svg') var(--dark-violet);
     background-size: cover;
     flex-basis: 100%;
     display: flex;
@@ -401,7 +402,7 @@ header ul li:hover a {
 }
 
 #boost {
-    background: url('./images/bg-boost-desktop.svg') var(--dark-violet);
+    background: url('./assets/img/bg-boost-desktop.svg') var(--dark-violet);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -711,7 +712,7 @@ footer {
     }
 
     #shortening form {
-        background: url('./images/bg-shorten-mobile.svg') var(--dark-violet);
+        background: url('./assets/img/bg-shorten-mobile.svg') var(--dark-violet);
         background-size: cover;
         flex-direction: column;
         padding: 24px;
@@ -782,7 +783,7 @@ footer {
     }
 
     #boost {
-        background: url('./images/bg-boost-mobile.svg') var(--dark-violet);
+        background: url('./assets/img/bg-boost-mobile.svg') var(--dark-violet);
         background-size: cover;
     }
 
