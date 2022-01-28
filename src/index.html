@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="./styles.css" />
 
   <title> Luis Polanco | Shortly URL shortening API</title>
 
@@ -65,19 +64,13 @@
       <form>
         <input type="text" placeholder="Shorten a link here..." />
         <button type="submit" class="buttons">Shorten It!</button>
+        <p id="error-text"></p>
       </form>
     </div>
 
     <section id="statistics">
 
       <ul>
-        <!-- <li>
-          <p class="entered-link"><a href="#">https://luis.com</a></p>
-          <div>
-            <p class="given-link"><a href="#">https://l.com</a></p>
-            <button class="buttons">Copy</button>
-          </div>
-        </li> -->
       </ul>
 
       <div id="statistics-intro">
@@ -181,7 +174,5 @@
 
 
 </body>
-
-<script src="./index.js"></script>
 
 </html>

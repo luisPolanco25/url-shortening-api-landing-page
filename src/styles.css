@@ -244,6 +244,17 @@ header ul li:hover a {
     margin-left: 24px;
 }
 
+#error-text {
+    display: none;
+    position: absolute;
+    bottom: 18px;
+    left: 62px;
+    color: var(--red);
+    font-size: 0.8rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
 #statistics ul {
     display: flex;
     flex-direction: column;
@@ -724,6 +735,7 @@ footer {
         width: 100%;
         padding: 11px 15px;
         margin-bottom: 16px;
+        order: 1;
     }
 
     #shortening form input::placeholder {
@@ -736,7 +748,16 @@ footer {
         width: 100%;
         margin-left: 0;
         padding: 11px 15px;
+        order: 3;
+    }
 
+    #error-text {
+        position: relative;
+        bottom: 10px;
+        left: 0px;
+        font-size: 0.7rem;
+        margin-bottom: 4px;
+        order: 2;
     }
 
     #statistics ul li {
